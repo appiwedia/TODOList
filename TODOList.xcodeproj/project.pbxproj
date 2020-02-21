@@ -13,6 +13,10 @@
 		300F7A7D23FD53D3006DC391 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 300F7A7C23FD53D3006DC391 /* Assets.xcassets */; };
 		300F7A8023FD53D3006DC391 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 300F7A7F23FD53D3006DC391 /* Preview Assets.xcassets */; };
 		300F7A8323FD53D3006DC391 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 300F7A8123FD53D3006DC391 /* LaunchScreen.storyboard */; };
+		300F7AAD23FED173006DC391 /* AddTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300F7AAC23FED173006DC391 /* AddTaskView.swift */; };
+		300F7AB224002319006DC391 /* TaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300F7AB124002319006DC391 /* TaskView.swift */; };
+		300F7AB4240023A3006DC391 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300F7AB3240023A3006DC391 /* Task.swift */; };
+		300F7AB6240023FF006DC391 /* TaskModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300F7AB5240023FF006DC391 /* TaskModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		300F7A7F23FD53D3006DC391 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		300F7A8223FD53D3006DC391 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		300F7A8423FD53D3006DC391 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		300F7AAC23FED173006DC391 /* AddTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskView.swift; sourceTree = "<group>"; };
+		300F7AB124002319006DC391 /* TaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskView.swift; sourceTree = "<group>"; };
+		300F7AB3240023A3006DC391 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		300F7AB5240023FF006DC391 /* TaskModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +66,9 @@
 			children = (
 				300F7A7623FD53D1006DC391 /* AppDelegate.swift */,
 				300F7A7823FD53D1006DC391 /* SceneDelegate.swift */,
-				300F7A7A23FD53D1006DC391 /* ContentView.swift */,
+				300F7AB0240022CF006DC391 /* Models */,
+				300F7AAE240022B6006DC391 /* Views */,
+				300F7AAF240022C1006DC391 /* View Models */,
 				300F7A7C23FD53D3006DC391 /* Assets.xcassets */,
 				300F7A8123FD53D3006DC391 /* LaunchScreen.storyboard */,
 				300F7A8423FD53D3006DC391 /* Info.plist */,
@@ -73,6 +83,32 @@
 				300F7A7F23FD53D3006DC391 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		300F7AAE240022B6006DC391 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				300F7A7A23FD53D1006DC391 /* ContentView.swift */,
+				300F7AB124002319006DC391 /* TaskView.swift */,
+				300F7AAC23FED173006DC391 /* AddTaskView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		300F7AAF240022C1006DC391 /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				300F7AB5240023FF006DC391 /* TaskModel.swift */,
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
+		300F7AB0240022CF006DC391 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				300F7AB3240023A3006DC391 /* Task.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,8 +183,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				300F7A7723FD53D1006DC391 /* AppDelegate.swift in Sources */,
+				300F7AB6240023FF006DC391 /* TaskModel.swift in Sources */,
 				300F7A7923FD53D1006DC391 /* SceneDelegate.swift in Sources */,
 				300F7A7B23FD53D1006DC391 /* ContentView.swift in Sources */,
+				300F7AB224002319006DC391 /* TaskView.swift in Sources */,
+				300F7AB4240023A3006DC391 /* Task.swift in Sources */,
+				300F7AAD23FED173006DC391 /* AddTaskView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
